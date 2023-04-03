@@ -41,7 +41,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val emailTv = findViewById<TextView>(R.id.emailTv)
         auth = Firebase.auth
+        emailTv.text= auth.currentUser?.email.toString()
 
         oneTapClient = Identity.getSignInClient(this)
 
@@ -172,7 +174,6 @@ class MainActivity : AppCompatActivity() {
                         // with your backend.
                         Log.d(TAG, "Got ID token: $idToken")
                         firebaseAuthWithGoogle(idToken)
-
                     }
                     username != null -> {
                         Log.d(TAG, "Got name: $username")
@@ -218,6 +219,9 @@ class MainActivity : AppCompatActivity() {
                     // Sign in success, update UI with the signed-in user's information
                     Log.d(TAG, "signInWithCredential:success")
                     val user = auth.currentUser
+                    val emailTv = findViewById<TextView>(R.id.emailTv)
+                    emailTv.text= user?.email.toString()
+                    Log.d(TAG, user?.email.toString())
                 } else {
                     // If sign in fails, display a message to the user.
                     Log.w(TAG, "signInWithCredential:failure", task.exception)
