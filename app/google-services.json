@@ -23,7 +23,44 @@
           }
         },
         {
-          "client_id": "308080264443-8tf2hp103b0sgk787eep41upoqbijgqo.apps.googleusercontent.com",
+          "client_id": "308080264443-mstuo304t1bs2oa11lm9k6m8ljt0f3mu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcgVI0jqkfXQqt8sSC4RQSTX8uxrqFRzY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "308080264443-8tf2hp103b0sgk787eep41upoqbijgqo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:308080264443:android:6535db861dc215f3bcdc5e",
+        "android_client_info": {
+          "package_name": "metropolia.nhanmai.keygenmanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "308080264443-0p86a30k0sj5e9lhr0hmcotj70uql55p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "metropolia.nhanmai.keygenmanager",
+            "certificate_hash": "0ab176f2d6c24ea2cbf0cfdfd66c5dd7470db789"
+          }
+        },
+        {
+          "client_id": "308080264443-mstuo304t1bs2oa11lm9k6m8ljt0f3mu.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
