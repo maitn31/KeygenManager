@@ -43,7 +43,9 @@ class MainActivity : AppCompatActivity() {
 
         val emailTv = findViewById<TextView>(R.id.emailTv)
         auth = Firebase.auth
-        emailTv.text= auth.currentUser?.email.toString()
+        if(auth.currentUser?.email != null) {
+            emailTv.text = auth.currentUser?.email.toString()
+        }
 
         oneTapClient = Identity.getSignInClient(this)
 
